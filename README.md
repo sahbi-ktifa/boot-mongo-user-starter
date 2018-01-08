@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sahbi-ktifa/dailyheroes.svg?branch=develop)](https://travis-ci.org/sahbi-ktifa/dailyheroes)
+[![Build Status](https://travis-ci.org/sahbi-ktifa/boot-mongo-user-starter.svg?branch=master)](https://travis-ci.org/sahbi-ktifa/boot-mongo-user-starter)
 
 # SpringBoot MongoDB User Starter
 
