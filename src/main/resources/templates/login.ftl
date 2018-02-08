@@ -81,7 +81,7 @@
 <script type="text/javascript" src="webjars/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="webjars/angularjs/1.6.6/angular.min.js"></script>
 <script type="text/javascript" src="webjars/angularjs/1.6.6/angular-resource.min.js"></script>
-<script type="text/javascript" src="/resources/js/login/app.js"></script>
-<script type="text/javascript" src="/resources/js/login/controllers.js"></script>
+<script type="text/javascript" src="/js/login/app.js"></script>
+<script type="text/javascript" src="/js/login/controllers.js"></script>
 </body>
 </html>

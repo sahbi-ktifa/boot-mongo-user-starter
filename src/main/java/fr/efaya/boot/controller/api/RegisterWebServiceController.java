@@ -4,10 +4,12 @@ import fr.efaya.boot.domain.User;
 import fr.efaya.boot.repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.management.InstanceAlreadyExistsException;
 
@@ -42,5 +44,10 @@ public class RegisterWebServiceController {
             userRepository.save(newUser);
         }
         return "Registered successfully. <a href=\"/\">Go to login.</a>";
+    }
+
+    @ExceptionHandler(InstanceAlreadyExistsException.class)
+    public ModelAndView userAlreadyExists() {
+        return new ModelAndView("error", "error", "User already exists.");
     }
 }
